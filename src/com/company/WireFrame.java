@@ -14,6 +14,16 @@ public class WireFrame extends JFrame
     JRadioButton jRadioButton1 = new JRadioButton();
     JTextField titleCard = new JTextField();
     JPanel jpanel = new JPanel();
+    JButton jButton = new JButton();
+    JRadioButton one = new JRadioButton();
+    JRadioButton two = new JRadioButton();
+    ButtonGroup onetwo = new ButtonGroup();
+    JPanel onetwoPanel = new JPanel();
+    JRadioButton un = new JRadioButton();
+    JRadioButton duex = new JRadioButton();
+    ButtonGroup unduex = new ButtonGroup();
+    JPanel unduexPanel = new JPanel();
+    JTextField jTextField = new JTextField();
 
 
 
@@ -66,9 +76,8 @@ public class WireFrame extends JFrame
         jpanel.setLayout(new GridBagLayout());
         gridBagConstraints = new GridBagConstraints();
         gridBagConstraints.gridx = 1;
-        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
         gridBagConstraints.insets = new Insets(5,10,5,10);
-        gridBagConstraints.anchor = gridBagConstraints.EAST;
         getContentPane().add(jpanel, gridBagConstraints);
 
 
@@ -79,7 +88,6 @@ public class WireFrame extends JFrame
         gridBagConstraints = new GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 1;
-        gridBagConstraints.anchor = gridBagConstraints.WEST;
         jpanel.add(jRadioButton1, gridBagConstraints);
 
         jRadioButton2.setText("dos");
@@ -90,6 +98,77 @@ public class WireFrame extends JFrame
         gridBagConstraints.gridy = 0;
         gridBagConstraints.anchor = gridBagConstraints.WEST;
         jpanel.add(jRadioButton2, gridBagConstraints);
+
+
+
+        onetwoPanel.setPreferredSize(new Dimension(160, 75));
+        onetwoPanel.setBackground(Color.GREEN);
+        onetwoPanel.setLayout(new GridBagLayout());
+        gridBagConstraints = new GridBagConstraints();
+        gridBagConstraints.gridx =  1;
+        gridBagConstraints.gridy = 1;
+
+        getContentPane().add(onetwoPanel, gridBagConstraints);
+
+        one.setText("One");
+        one.setBackground(Color.YELLOW);
+        onetwo.add(one);
+        gridBagConstraints = new GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        onetwoPanel.add(one, gridBagConstraints);
+
+        two.setText("Two");
+        two.setBackground(Color.yellow);
+        onetwo.add(two);
+        gridBagConstraints = new GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 1;
+        onetwoPanel.add(two, gridBagConstraints);
+
+
+
+        unduexPanel.setPreferredSize(new Dimension(160,75));
+        unduexPanel.setBackground(Color.MAGENTA);
+        unduexPanel.setLayout(new GridBagLayout());
+        gridBagConstraints = new GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 2;
+        getContentPane().add(unduexPanel, gridBagConstraints);
+
+        un.setText("Un");
+        un.setBackground(Color.pink);
+        unduex.add(un);
+        gridBagConstraints = new GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        unduexPanel.add(un, gridBagConstraints);
+
+        duex.setText("Duex");
+        duex.setBackground(Color.PINK);
+        unduex.add(duex);
+        gridBagConstraints = new GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 1;
+        unduexPanel.add(duex, gridBagConstraints);
+
+
+        jTextField = new JTextField();
+        jTextField.setPreferredSize(new Dimension(250,250));
+        jTextField.setBackground(Color.lightGray);
+        jTextField.setText("Text");
+        gridBagConstraints = new GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 2;
+        mainPanel.add(jTextField, gridBagConstraints);
+
+        jButton.setText("Button");
+        jButton.setSize(new Dimension(50,25));
+        jButton.setBackground(Color.CYAN);
+        gridBagConstraints = new GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 3;
+        getContentPane().add(jButton, gridBagConstraints);
 
 
 
